@@ -1,0 +1,4 @@
+(function(){var defaultStoreUrl="/ezoic/imp.go";var newStoreUrl="http://g.ezoic.net/ezoic/imp.go";var pageViewInterval=20000;function getStoreImpressionUrl(){if(_ezaq.domain_id=="416"){return newStoreUrl;}else{return defaultStoreUrl;}}
+function storeImpression(){if(typeof _ezaq!="undefined"){if(window.XMLHttpRequest){xmlhttp=new XMLHttpRequest();if(typeof xmlhttp.withCredentials!="undefined"){xmlhttp.open("POST",getStoreImpressionUrl(),true);}else if(typeof XDomainRequest!="undefined"){xmlhttp=new XDomainRequest();xmlhttp.open("POST",getStoreImpressionUrl());}}else{xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");xmlhttp.open("POST",getStoreImpressionUrl());}
+xmlhttp.setRequestHeader("Content-type","application/json");xmlhttp.send(JSON.stringify(_ezaq));if(_ezaq.page_view_count<1800){_ezaq.page_view_count+=1;setTimeout(storeImpression,pageViewInterval);}}}
+storeImpression();})();

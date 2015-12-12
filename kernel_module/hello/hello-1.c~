@@ -1,0 +1,23 @@
+#include <linux/module.h>
+#include <linux/kernel.h>
+
+int hello-1_init(void)
+{
+	printk(KERN_INFO "Hello world 1.\n");	
+	return 0;
+
+}
+
+void hello-1_exit(void)
+{
+	printk(KERN_INFO "Goodbye world 1.\n");
+}
+
+
+module_init(hello-1_init);
+module_exit(hello-1_exit);
+
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Emmanuel Xavier");
+MODULE_DESCRIPTION("Test module");
+

@@ -1,0 +1,1 @@
+cmd_/home/emmanuel/PROJECTS/kernel_module/part3/hello.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/emmanuel/PROJECTS/kernel_module/part3/hello.ko /home/emmanuel/PROJECTS/kernel_module/part3/hello.o /home/emmanuel/PROJECTS/kernel_module/part3/hello.mod.o

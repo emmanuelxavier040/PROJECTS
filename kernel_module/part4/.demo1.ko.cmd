@@ -1,0 +1,1 @@
+cmd_/home/emmanuel/PROJECTS/kernel_module/part4/demo1.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/emmanuel/PROJECTS/kernel_module/part4/demo1.ko /home/emmanuel/PROJECTS/kernel_module/part4/demo1.o /home/emmanuel/PROJECTS/kernel_module/part4/demo1.mod.o

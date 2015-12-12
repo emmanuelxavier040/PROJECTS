@@ -1,0 +1,1 @@
+cmd_/home/emmanuel/PROJECTS/kernel_module/newtry/try.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/emmanuel/PROJECTS/kernel_module/newtry/try.ko /home/emmanuel/PROJECTS/kernel_module/newtry/try.o /home/emmanuel/PROJECTS/kernel_module/newtry/try.mod.o

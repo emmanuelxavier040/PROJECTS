@@ -1,0 +1,6 @@
+/*!CK:3380689279!*//*1441842910,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["ie80m"]); }
+
+__d('ErrorLogging',['ErrorSignal','ErrorUtils','JSErrorExtra','JSErrorPlatformColumns'],function a(b,c,d,e,f,g,h,i,j,k){if(c.__markCompiled)c.__markCompiled();function l(n){var o=n.extra||{},p={};Object.keys(j).forEach(function(q){if(j[q])p[q]=true;});Object.keys(o).forEach(function(q){if(o[q]){p[q]=true;}else if(p[q])delete p[q];});n.extra=Object.keys(p);}function m(n){n.app_id=k.app_id;}i.addListener(function(n){l(n);m(n);h.logJSError(n.category||'onerror',{error:n.name||n.message,extra:n});});},null);
+__d('PluginPageActionLogger',['BanzaiLogger','DOM','Event','PagePluginActions','PagePluginActionTypes'],function a(b,c,d,e,f,g,h,i,j,k,l){if(c.__markCompiled)c.__markCompiled();var m={initializeClickLoggers:function(n,o,p,q,r,s,t,u,v){var w=function(x,y){try{var aa=i.find(p,'.'+x);j.listen(aa,'click',function(ba){h.log('PagePluginActionsLoggerConfig',{page_id:n,page_plugin_action:y,page_plugin_action_type:l.CLICK,referer_url:o});});}catch(z){}};w(q,k.PAGE_LIKE);w(r,k.PAGE_UNLIKE);w(s,k.PAGE_AVATAR);w(t,k.PAGE_PERMALINK);w(u,k.PAGE_SHARE);w(v,k.PAGE_CTA);}};f.exports=m;},null);

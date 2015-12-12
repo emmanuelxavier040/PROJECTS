@@ -1,0 +1,1 @@
+cmd_/home/emmanuel/PROJECTS/virtual_mouse/virmouse.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/emmanuel/PROJECTS/virtual_mouse/virmouse.ko /home/emmanuel/PROJECTS/virtual_mouse/virmouse.o /home/emmanuel/PROJECTS/virtual_mouse/virmouse.mod.o

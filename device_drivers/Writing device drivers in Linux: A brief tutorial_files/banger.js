@@ -1,0 +1,1 @@
+function ezbanger(e){console.log('Slot has been rendered:');console.log(e)}

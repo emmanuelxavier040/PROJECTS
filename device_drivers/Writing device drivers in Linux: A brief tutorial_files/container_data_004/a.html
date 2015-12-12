@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="wf-roboto-n4-active wf-active" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- base href="http://www.gstatic.com/doubleclick/studio/innovation/h5/layouts/tetris/bootstrap-3/" --><script>var STUDIO_ORIGINAL_ASSET_URL = "//www.gstatic.com/doubleclick/studio/innovation/h5/layouts/tetris/bootstrap-3/tetris.html?liveEnvironment=true&e=101&renderingType=2&leftOffset=0&topOffset=0&c=pCx1DL1wRk&t=2";</script>
+  <title>Tetris Layout</title>
+  <link rel="stylesheet" href="a_data/tetris.css">
+  <link rel="stylesheet" href="a_data/tetris_layout.css">
+  <script src="a_data/tetris_gdn_adapter.js"></script>
+  <script src="a_data/addata_util.js"></script>
+  <script src="a_data/Enabler_01_71.js"></script>
+  <script src="a_data/CustomElements.js"></script>
+  <script src="a_data/tetris.js"></script>
+  <script src="a_data/tetris_layout.js"></script>
+  <script>
+    function GdnLayout() {}
+    GdnLayout.getConfig =
+        studioinnovation.layouts.lightbox.tetris.gdnAdapter.
+        translateFromEnablerParams;
+
+    function GdnPreview() {}
+    GdnPreview.getConfig =
+        studioinnovation.layouts.lightbox.tetris.gdnAdapter.
+        translateFromDataObject;
+
+    // TODO(cbehar): Switch to use Enabler.loadModules() with Enabler >= v.01_73.
+    var moduleIds = [
+      studio.module.ModuleId.CONFIGURABLE,
+      studio.module.ModuleId.GDN
+    ];
+
+    var modulesToLoad = moduleIds.length;
+    var moduleLoadedHandler = function() {
+      if (--modulesToLoad == 0) {
+        new studioinnovation.layouts.lightbox.tetris.Tetris();
+      }
+    };
+
+    for (var i = 0; i < moduleIds.length; ++i) {
+      Enabler.loadModule(moduleIds[i], moduleLoadedHandler);
+    }
+  </script>
+<script src="a_data/prod_studio_01_71_configurablemodule.js" charset="UTF-8" type="text/javascript"></script><script src="a_data/prod_studio_01_71_gdnmodule.js" charset="UTF-8" type="text/javascript"></script><style class="themer-font">.font-themed {
+  font-family: 'Roboto', 'Roboto', 'HelveticaNeue-Light', 'HelveticaNeue', 'Roboto', 'Open Sans', 'Arial', sans-serif !important;
+}</style><link href="a_data/css.css" rel="stylesheet"><script src="a_data/webfont.js" charset="UTF-8" type="text/javascript"></script></head>
+<body class="dark desktop firefox linux web"><div id="invitation" class="view-container"><div id="cta" class="view-container"><div class="invitation-presenter square touch-arrows touch-radial bordered single-thumb"><div style="background-image: linear-gradient(to bottom, rgb(123, 123, 123) 30%, rgb(18, 18, 18) 100%);" class="generated-background"></div><div class="caption-background"></div><div style="background-image: url(&quot;https://tpc.googlesyndication.com/pagead/imgad?id=CICAgKCT2IWcARDYBBjYBDII1n2NaPY1q1Y&quot;);" class="logo"></div><div class="overlay"><div class="static"></div><div style="background: none repeat scroll 0% 0% rgba(85, 85, 85, 0.6);" class="touch-positioned"></div></div><div style="background: none repeat scroll 0% 0% rgb(85, 85, 85);" class="call-to-action">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‏‎‎‏‏‎‏‎‎‏‎‏‏‏‏‎‏‏‏‏‎‏‎‎‎‏‎‎‎‎‎‏‏‏‎‏‏‎‏‏‏‎‏‏‏‎‎‎‎‎‎‎‎‏‎‎‎‎‎‎‎‎‏‎‏‎‏‎‏‏‎‏‏‎‎‎‏‎‎Hover to Expand‎‏‎‎‏‎</div><div class="custom-invite"><div class="custom-background"></div><div class="foreground"></div></div><div style="font-size: 20px;" class="caption font-themed primary active"><div style="margin-top: 6px;">Jitne ka pack utne ka Free Cash</div></div><tetris-video-thumb class="thumb has-cover primary active"><div style="background-color: rgb(85, 85, 85);" class="icon icon-position-lower-right"></div><div style="background-image: url(&quot;https://tpc.googlesyndication.com/pagead/imgad?id=CICAgKCThIDDqAEQrAIY-gEyCHLiyfEOL3Bd&quot;);" class="background"></div></tetris-video-thumb></div></div><div id="undefined" class="view-container"></div></div><div id="expanded" class="view-container" style="width: 100%; height: 100%; left: -9999px;"><div style="background-color: rgb(18, 18, 18);" class="filmstrip-presenter landscape"><header class="custom-header"></header><header style="background-image: linear-gradient(to bottom, rgb(123, 123, 123) 30%, rgb(18, 18, 18) 100%);" class="generated-header"><div><div class="social-container"><div class="social-overlay-container"><div class="social-overlay"><div class="social-header"><div>‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‏‎‎‏‏‎‏‎‎‏‎‏‏‏‏‏‏‏‏‏‏‎‏‎‏‎‎‏‎‏‏‎‎‏‎‏‏‎‏‎‎‏‏‏‏‏‎‎‏‎‏‏‏‎‏‏‎‏‎‎‏‎‎‏‎‎‎‏‎‎‎‏‏‎‎‎‏‏‏‏‎Connect With Us‎‏‎‎‏‎</div></div></div></div><div class="social-button"></div></div></div><div><div class="rotator wide"><div class="logo"><img src="a_data/imgad.jpeg"></div><div class="text-cta-container"><div class="text-cta-rotator"><div style="right: 147px; font-size: 26px;" class="message text shown"><div style="margin-top: 1px;" class="font-themed">Jitne ka pack utne ka Free Cash</div></div><div style="width: 127px;" class="message cta shown"><button class="font-themed">Know more!</button></div></div></div></div></div></header><div class="content"><div style="right: 0px;" class="card-container one-card"><tetris-video-card class="card primary"></tetris-video-card></div><div style="background-image: linear-gradient(to top, rgb(123, 123, 123) 30%, rgb(18, 18, 18) 100%); width: 160px;" class="thumb-scroller portrait"><div class="top-arrow hidden"><div></div></div><div class="left-arrow hidden"><div></div></div><div class="thumb-container"><tetris-video-thumb style="width: 150px; height: 100px;" class="thumb has-cover selected"><div style="background-color: rgb(85, 85, 85);" class="icon icon-position-default"></div><div style="background-image: url(&quot;https://tpc.googlesyndication.com/pagead/imgad?id=CICAgKCThIDDqAEQrAIY-gEyCHLiyfEOL3Bd&quot;);" class="background"></div></tetris-video-thumb></div><div class="right-arrow hidden"><div></div></div><div class="bottom-arrow hidden"><div></div></div></div></div></div></div></body></html>

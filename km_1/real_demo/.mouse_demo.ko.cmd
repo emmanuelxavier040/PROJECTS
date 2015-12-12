@@ -1,0 +1,1 @@
+cmd_/home/emmanuel/PROJECTS/km_1/real_demo/mouse_demo.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/emmanuel/PROJECTS/km_1/real_demo/mouse_demo.ko /home/emmanuel/PROJECTS/km_1/real_demo/mouse_demo.o /home/emmanuel/PROJECTS/km_1/real_demo/mouse_demo.mod.o

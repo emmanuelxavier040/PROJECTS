@@ -1,0 +1,1 @@
+cmd_/home/emmanuel/PROJECTS/kernel_module/try/new.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/emmanuel/PROJECTS/kernel_module/try/new.ko /home/emmanuel/PROJECTS/kernel_module/try/new.o /home/emmanuel/PROJECTS/kernel_module/try/new.mod.o

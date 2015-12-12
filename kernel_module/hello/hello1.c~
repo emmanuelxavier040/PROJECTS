@@ -1,0 +1,48 @@
+
+#define MODULE
+
+#include <linux/module.h>
+#include <linux/moduleparam.h>
+#include <linux/kernel.h>
+#include <linux/init.h>
+
+static int hello1_i __initdata = 12;
+
+static int myint = -1;
+//static char *mystr="ABC";
+
+
+
+module_param(myint, int, 0644);
+MODULE_PARM(myint, "i");
+//module_param(mystr, char, 0644);
+
+
+MODULE_PARM_DESC(myint, "Integer check");
+MODULE_PARM_DESC(mystr, "String check");
+
+static int __init hello1_init(void)
+{
+	printk(KERN_INFO "Module inserted.....Hello world 1.\n");
+	for(hello1_i = 0; hello1_i < 10; hello1_i++)
+		printk(KERN_INFO "%d\n", hello1_i);
+
+	printk(KERN_INFO "%d",myint);
+	//printk(KERN_INFO "%s",mystr);			
+		
+	return 0;
+}
+
+static void __exit hello1_exit(void)
+{
+	printk(KERN_INFO "Module removed.....Goodbye world 1.\n");
+}
+
+
+module_init(hello1_init);
+module_exit(hello1_exit);
+
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Emmanuel Xavier");
+MODULE_DESCRIPTION("Test module hello1");
+
